@@ -1,3 +1,5 @@
+package dp;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -19,11 +21,12 @@ public class Main_BOJ_2293_동전1_G5_이승연_88ms {
 		}
 		
 		int[] result = new int[k+1];
+		result[0] = 1; 
 		
 		for(int i=0; i<n; i++) {
 			int idx = value[i];
-			if(idx > k) continue;
-			result[idx]++; 
+//			if(idx > k) continue;
+//			result[idx]++; 
 			while(idx <= k) {
 				result[idx] += result[idx-value[i]];	
 				idx++;

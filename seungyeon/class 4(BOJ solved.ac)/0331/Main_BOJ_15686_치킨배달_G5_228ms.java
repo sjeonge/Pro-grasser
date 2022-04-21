@@ -4,7 +4,7 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.StringTokenizer;
 
-public class Main_BOJ_15686_치킨배달_G5_276ms {
+public class Main_BOJ_15686_치킨배달_G5_228ms {
 	private static int total_distance;
 
 	public static void main(String[] args) throws IOException {
@@ -35,12 +35,12 @@ public class Main_BOJ_15686_치킨배달_G5_276ms {
 		total_distance = 10000;
 		int c_size = chicken_pos.size();
 		
-		dfs(0, 0, c_size-M, house_pos, chicken_pos, new boolean[c_size]);
+		combination(0, 0, c_size-M, house_pos, chicken_pos, new boolean[c_size]);
 
 		System.out.println(total_distance);
 	}
 	
-	public static void dfs(int start, int cnt, int n, ArrayList<int[]> house_pos, ArrayList<int[]> chicken_pos, boolean[] close) {
+	public static void combination(int start, int cnt, int n, ArrayList<int[]> house_pos, ArrayList<int[]> chicken_pos, boolean[] close) {
 		if(cnt == n) {
 			int distance = 0;
 			
@@ -54,13 +54,14 @@ public class Main_BOJ_15686_치킨배달_G5_276ms {
 					}
 				}
 				distance += temp_distance;
+				if(total_distance<=distance) return; 
 			}
 			total_distance = Math.min(total_distance, distance);
 		}
 		
 		for(int i=start, size=chicken_pos.size(); i<size; i++) { // 닫아야 되는 개수 
 			close[i] = true; 
-			dfs(i+1, cnt+1, n, house_pos, chicken_pos, close);
+			combination(i+1, cnt+1, n, house_pos, chicken_pos, close);
 			close[i] = false; 			
 		}
 	}
