@@ -2,7 +2,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Main_BOJ_1699_제곱수의합_S3_이승연2_116ms {
+public class Main_BOJ_1699_제곱수의합_S3_이승연_116ms {
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
