@@ -5,19 +5,18 @@
 
 ## Basic Rules
 - **화, 목 9시 meeting!**
-- BOJ solved.ac 기준 class 4에 있는 문제 중 Schedules에 적힌 문제를 푼다
+- BOJ solved.ac 기준 Class 5에 있는 문제 중 Schedules에 적힌 문제를 푼다 ~~(실화?)~~
 
 ## Schedules in May 🎈  
 
 |Date|Problem 1|
 |----|--------|
 |5/3(화)|[20040(사이클 게임, G4)](https://www.acmicpc.net/problem/20040)|
-|5/10(화)|[17404(RGB거리 2, G4)](https://www.acmicpc.net/problem/17404)|
+|5/10(화)|[16724(피리 부는 사나이, G2)](https://www.acmicpc.net/problem/16724)|
 |5/12(목)|[17387(선분 교차 2, G2)](https://www.acmicpc.net/problem/17387)|
 |5/17(화)|[17143(낚시왕, G2)](https://www.acmicpc.net/problem/17143)|
 |5/19(목)|[16946(벽 부수고 이동하기 4, G2)](https://www.acmicpc.net/problem/16946)|
-|5/24(화)|[16724(피리 부는 사나이, G2)](https://www.acmicpc.net/problem/16724)|
-|5/26(목)|[13460(구슬 탈출 2, G1)](https://www.acmicpc.net/problem/13460)|
+|5/24(화)|[17404(RGB거리 2, G4)](https://www.acmicpc.net/problem/17404)|
 |5/31(화)|[12850(본대 산책 2, G1)](https://www.acmicpc.net/problem/12850)|
 
 
